@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>submit or upload</title>
+    <style>
+        ul {
+            border-radius: 15px;
+            background-color: lightgray;
+            padding: 0px;
+            height: 40px;
+        }
+
+        ul li {
+            list-style-type: none;
+            float: left;
+            margin-right: 50px;
+        }
+
+
+        ul li a {
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            width: 100px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        div {
+
+            border-radius: 30px;
+            background-color: #f2f2f2;
+            padding: 20px;
+
+        }
+
+        input[type=file] {
+            background-color: gray;
+            border: none;
+            color: white;
+            padding: 5px 5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        input[type=submit] {
+            padding: 10px 15px;
+            background: #ccc;
+            border: 0 none;
+            cursor: pointer;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+        }
+        input[type=submit]:hover{
+            color: darkgray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="index.html">Page 1</a></li>
+
+        <li><a href="page2.html">Page 2</a></li>
+
+        <li><a href="page3.html">Page 3</a></li>
+    </ul>
+    <div>
+        <label for="pic">Upload photo from your pc </label>
+        <input type="file" accept="image/png, image/jpeg ,image/jpg" name="pic">
+        <br>
+
+        <input type="submit" value="Submit">
+    </div>
+</body>
+
+</html>

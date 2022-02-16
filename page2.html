@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search and filter</title>
+
+    <style>
+        ul {
+            border-radius: 15px;
+            background-color: lightgray;
+            padding: 0px;
+            height: 40px;
+        }
+
+        ul li {
+            list-style-type: none;
+            float: left;
+            margin-right: 50px;
+        }
+
+
+        ul li a {
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            width: 100px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        input[type=next],
+        select {
+            width: 25%;
+            padding: 8px 15px;
+            margin: 4px 0;
+            display: block;
+            
+
+
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: capitalize;
+
+        }
+
+        input[type=text] {
+            width: 24%;
+            padding: 8px 8px;
+            margin: 4px 0;
+            display: block;
+        }
+
+
+
+        div {
+            border-radius: 15px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        #list2 {
+            margin: 0px;
+            padding-bottom: 10px;
+        }
+
+        #list2 li {
+            padding: 12px 8px 15px 40px;
+            list-style: none;
+            font-size: 150%;
+            text-transform: capitalize;
+        }
+
+        #list2 li:hover {
+            background-color: #726E6E;
+            color: #FFF;
+        }
+
+        #list2 li input {
+            margin-right: 30px;
+           
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">Page 1</a></li>
+
+        <li><a href="page2.html">Page 2</a></li>
+
+        <li><a href="page3.html">Page 3</a></li>
+    </ul>
+
+
+    <div>
+        <form>
+            <h2><label for="Search">serach</label></h2>
+            <select name="Search" id="Search">
+                <option value="Lion">Lion</option >
+                <option value="car">car</option>
+                <option value="mountain">mountain</option>
+            </select>
+           
+            <br>
+            <h2><label for="Search by name">Search by name</label></h2>
+            <input placeholder="Enter the photo name" id="Search by name" name="Search by name" type="text" width="50">
+
+
+            <br>
+            <br>
+            <h2>
+                filters
+            </h2>
+            <ul id="list2">
+                <li>
+                    <input type="checkbox" width="30" id="Cars" name="Cars" value="Cars"  >
+                    <label for="Cars">Cars</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="Animals" name="Animals" value="Animals" >
+                    <label for="Animals">Animals</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="mountain" name="mountain" value="mountain" >
+                    <label for="mountain">mountain</label>
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
+
+</html>
